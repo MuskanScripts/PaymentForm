@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file:///C:/Users/sudhi/OneDrive/Documents/style.css">
+    <style>
+        * {
+            box-sizing: content-box;
+        }
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 15px 30px;
+            font-size: 17px;
+            padding: 8px;
+            text-transform: none;
+
+
+        }
+
+        .container {
+            background-color: lightgrey;
+            padding: 5px 20px 15px 20px;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+
+            width: 100%;
+            padding: 12px;
+            border: 1px solid grey;
+            border-radius: 5px;
+        }
+
+        fieldset {
+            border: 0.5px solid lightslategray;
+            border-radius: 3px;
+
+        }
+
+        h1 {
+
+            text-align: center;
+            font-style: italic;
+        }
+
+        input[type="submit"] {
+
+            background-color: rgb(72, 132, 72);
+            border-radius: 5px;
+            color: antiquewhite;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            text-align: center;
+        }
+
+        input[type="submit"]:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form
+            action="file:///C:/Users/sudhi/OneDrive/Documents/payment.html?name=&amp;addres=&amp;email=&amp;pincode=&amp;phone+number=&amp;date=&amp;country_name=&amp;card_type=&amp;holder_name=&amp;card_number=&amp;password=">
+            <h1>PAYMENT INFORMATION</h1>
+            <h2>CONTACT DETAILS</h2>
+            <p>NAME:<input type="text" name="name"></p>
+            <fieldset>
+                <p>MALE <input type="radio" name="gender" id="gender">
+                    FEMALE <input type="radio" name="gender" id="gender"></p>
+            </fieldset>
+            <p>ADDRESS:<textarea name="addres" id="" cols="100" rows="5"></textarea></p>
+            <p>EMAIL:<input type="email" name="email" id=""></p>
+            <p>PINCODE:<input type="number" name="pincode" id="pincode"></p>
+            <p>CONTACT NUMBER:<input type="number" name="phone number" id="phone number"></p>
+            <p>DATE: <input type="date" name="date" id="date"></p>
+            <p>COUNTRY <select name="country_name" id="country_name">
+                    <option value="">--SELECT COUNTRY--</option>
+
+                    <option value="india">INDIA</option>
+                    <option value="international">INTERNATIONAL</option>
+                </select>
+
+            </p>
+            <h2>PAYMENT DETAILS</h2>
+            <p>PAYMENT METHOD</p>
+            <fieldset>
+                <input type="radio" name="payment" id="payment">CREDIT CARD <br>
+                <input type="radio" name="payment" id="payment">DEBIT CARD
+            </fieldset>
+            <p>CARD TYPE: <select name="card_type" id="card_type">
+                    <option value="">--SELECT CARD--</option>
+
+                    <option value="visa">VISA</option>
+                    <option value="mastercard">MASTERCARD</option>
+                    <option value="rupay">RuPAY</option>
+
+                </select> </p>
+            <p>CARD HOLDER NAME:<input type="text" name="holder_name" id="holder_name"></p>
+            <p>ENTER CARD NUMBER:<input type="number" name="card_number" placeholder="1111-2222-3333"></p>
+            <p>EXP.DATE: <input type="date" name="" id=""></p>
+            <p>CVV:<input type="password" name="password" placeholder="***"></p>
+            <p id="ccc"><input type="submit" value="PAY NOW"></p>
+            <p></p>
+        </form>
+    </div>
+    <!-- <img src="./payment_files/url" height="100px" width="100px"> -->
+
+
+    <script>
+
+        function callme() {
+
+            alert("Your payment successfully processed")
+
+
+
+        }
+        ccc.addEventListener('click', callme)
+
+
+
+
+    </script>
+
+</body>
+
+</html>
