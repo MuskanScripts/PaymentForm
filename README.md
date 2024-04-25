@@ -8,3 +8,4 @@ a sophomore pursuing a B.Tech in Electrical Engineering at the National Institut
 This project is a hands-on journey where I apply my skills in these technologies.
 
 Let's connect and code together! 💻🚀
+ok let's do it
